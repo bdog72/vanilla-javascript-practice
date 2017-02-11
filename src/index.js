@@ -5,9 +5,16 @@ const main = () => {
   document.querySelector('h1').textContent += 'bdog'
 }
 
-const bdog2 = 'bdog2'
+function bdog1 () {
+  document.write('Bdoggy72')
+}
+bdog1()
 
-console.log(bdog2)
+const timesFive = (num) => {
+  return num * 5
+}
+var answer = timesFive(5)
+document.write(answer)
 
 document.addEventListener('DOMContentLoaded', main)
 
