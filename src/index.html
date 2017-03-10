@@ -1,51 +1,13 @@
-<!-- <!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Vanilla Javascript Practice</title>
-</head>
-<body>
-<label for="search">Search by contact name: </label>
-<input id="search" type='text'>
-<button>Search</button>
-<p id='ex1'></p>
 
-<script>
-const contacts = ['Molly', 'Crystal'];
-const para = document.getElementById('ex1');
-const input = document.querySelector('input');
-const btn = document.querySelector('button');
-
-btn.addEventListener('Click', function() {
-  const searchName = input.value;
-  input.value = '';
-  input.focus();
-  for (var i = 0; i < contacts.length; i++) {
-    var splitContact = contacts[i].split(':');
-    if(splitContact[0] === searchName) {
-      para.textContent = splitContact[0] + '\'s number is ' = splitContact[1] + '.';
-      break;
-    } else {
-      para.textContent = 'Dog not Found';
-    }
-  }
-});
-</script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Simple contact search example</title>
-    <style>
-
-    </style>
   </head>
   <body>
 <p>Type in the letter a, b, or c in the search box</p>
-  <label for="search">Search by contact name: </label>
+<label for="search">Search by letter: </label>
   <input id="search" type="text">
   <button>Search</button>
 
